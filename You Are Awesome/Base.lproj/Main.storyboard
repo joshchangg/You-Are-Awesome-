@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,31 +13,46 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="You_Are_Awesome" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gh-2G-Poz">
-                                <rect key="frame" x="29" y="20" width="316" height="127"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
-                                <color key="textColor" systemColor="systemGreenColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDs-ub-y8y">
-                                <rect key="frame" x="135" y="155" width="104" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDs-ub-y8y">
+                                <rect key="frame" x="135" y="172" width="144" height="30"/>
                                 <state key="normal" title="Show Message"/>
                                 <connections>
                                     <action selector="messageButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4JZ-jK-wuJ"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ErJ-lm-DjX">
-                                <rect key="frame" x="16" y="193" width="343" height="454"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gh-2G-Poz">
+                                <rect key="frame" x="16" y="64" width="382" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="BzM-v5-xxT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ErJ-lm-DjX">
+                                <rect key="frame" x="16" y="210" width="382" height="632"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5gh-2G-Poz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0EL-kr-Br8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ErJ-lm-DjX" secondAttribute="bottom" constant="20" id="7w9-iQ-fwq"/>
+                            <constraint firstItem="hDs-ub-y8y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="APc-Hn-UHy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ErJ-lm-DjX" secondAttribute="trailing" constant="16" id="BJp-mr-GrI"/>
+                            <constraint firstItem="ErJ-lm-DjX" firstAttribute="top" secondItem="hDs-ub-y8y" secondAttribute="bottom" constant="8" symbolic="YES" id="EaA-TP-xqZ"/>
+                            <constraint firstItem="ErJ-lm-DjX" firstAttribute="top" secondItem="hDs-ub-y8y" secondAttribute="bottom" constant="8" id="U3u-Iv-eyT"/>
+                            <constraint firstItem="5gh-2G-Poz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="UeP-wi-nVH"/>
+                            <constraint firstItem="hDs-ub-y8y" firstAttribute="centerX" secondItem="ErJ-lm-DjX" secondAttribute="centerX" id="bBv-m8-PaV"/>
+                            <constraint firstItem="hDs-ub-y8y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="cDx-jI-3a0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5gh-2G-Poz" secondAttribute="trailing" constant="16" id="gsq-Xx-kx5"/>
+                            <constraint firstItem="ErJ-lm-DjX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oWw-Y7-Y6b"/>
+                            <constraint firstItem="hDs-ub-y8y" firstAttribute="centerX" secondItem="5gh-2G-Poz" secondAttribute="centerX" id="pkT-85-L6W"/>
+                            <constraint firstItem="hDs-ub-y8y" firstAttribute="top" secondItem="5gh-2G-Poz" secondAttribute="bottom" constant="8" id="yF4-0l-WpC"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="ErJ-lm-DjX" id="jNR-AL-7pR"/>
